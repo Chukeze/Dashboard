@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --font-family: "Roboto";
+
+    --bg-color:rgba();
+
+    --fw-thin: 100;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-extrabold: 900;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +20,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    font-family: var(--font-family),'Courier New', Courier, monospace, 'Times New Roman', Times, serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .wrapper{
@@ -36,15 +50,41 @@ header{
     justify-content: space-between;
 }
 
-
 .side{
     display: flex;
 }
+
 .sidebar{
     grid-column: 1/2;
     grid-row: 1/-1;
     background-color: blue;
+
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
 }
+
+.primary-navigation{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    column-gap: .5rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 main{
     grid-column: 2/-1;
     grid-row: 3/-1;
