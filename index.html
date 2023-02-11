@@ -12,11 +12,21 @@
         <header class="padding-block">
             <div class="top-bar">
                 <form action="">
-                    <div class="searchbox"><input type="search"></div>
+                    <div class="searchbox">
+                        <svg class="icon" id="search">
+                            <use xlink:href="./assets/images/icons/icons.svg#search"></use>
+                        </svg>
+                        <input type="search"/>
+                    </div>
                 </form>
                 <div class="side">
-                    <div class="notification"></div>
-                    <div class="cat"></div>
+                    <div class="notification">
+                        <svg class="icon" id="noti">
+                            <use xlink:href="./assets/images/icons/icons.svg#notification"></use>
+                        </svg>
+                    </div>
+                    <div class="profile">
+                    </div>
                     <p>Morgan Oakley</p>
                 </div>
             </div>
@@ -24,12 +34,13 @@
                 <div class="two-columns">
                     <div class="left">
                         <div class="image">
-                            <img src="" alt="">
                         </div>
-                        <p>Hi there,</p>
-                        <h2>Morgan Oakley(@morgan)</h2>
+                        <div class="details">
+                            <p>Hi there,</p>
+                            <h2>Morgan Oakley(@morgan)</h2>
+                        </div>
                     </div>
-                    <div class="right">
+                    <div class="btns">
                         <button>New</button>
                         <button>Upload</button>
                         <button>Share</button>
@@ -48,13 +59,6 @@
                 <h1>Dashboard</h1>
             </div>
             <nav class="primary-navigation">
-<!--<svg class="icon">
-  <use xlink:href="#notification"></use>
-</svg><svg class="icon">
-  <use xlink:href="#search"></use>
-</svg><svg class="icon">
-  <use xlink:href="#source-fork"></use>
-</svg>-->
                 <ul class="primary-navigation__pages">
                     <li class="flex">
                         <svg class="icon">
@@ -114,10 +118,166 @@
             </nav>
         </aside>
         <main class="padding-block">
-            <section class="project-container"></section>
-            <article class="Announcements-container"></article>
-            <article class="Trending-container"></article>
-            <aside class="Dashboards"></aside>
+            <section class="project-container">
+                <h1>Your Projects</h1>
+                <div class="project-wrapper">
+                    <div class="card">
+                        <div class="card__title"><h1>Super Cool Project</h1></div>
+                        <div class="card__details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum non quaerat labore dolor illo minima quibusdam, ea dicta quas quisquam, maiores itaque accusamus recusandae, quis saepe repudiandae porro doloremque?</p></div>
+                        <div class="card__cta">
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#star-plus-outline"></use>
+                            </svg>
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#eye-plus"></use>
+                            </svg>
+                            <svg class="icon grey" >
+                                <use xlink:href="./assets/images/icons/icons.svg#source-fork"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title"><h1>Less Cool Project</h1></div>
+                        <div class="card__details"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, doloribus. Beatae, nisi adipisci aliquid odio, natus, dicta placeat temporibus sunt quas rem tempore assumenda. Incidunt cum perferendis assumenda sed laudantium.</p></div>
+                        <div class="card__cta">
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#star-plus-outline"></use>
+                            </svg>
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#eye-plus"></use>
+                            </svg>
+                            <svg class="icon grey" >
+                                <use xlink:href="./assets/images/icons/icons.svg#source-fork"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title"><h1>Impossible App</h1></div>
+                        <div class="card__details"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt delectus tempora totam, ratione alias provident aspernatur unde ad explicabo optio nihil quaerat necessitatibus nulla vero iste doloribus hic! Nobis, neque!</p></div>
+                        <div class="card__cta">
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#star-plus-outline"></use>
+                            </svg>
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#eye-plus"></use>
+                            </svg>
+                            <svg class="icon grey" >
+                                <use xlink:href="./assets/images/icons/icons.svg#source-fork"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title"><h1>Easy Peasy App</h1></div>
+                        <div class="card__details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quaerat inventore facilis numquam aspernatur id esse illo nulla explicabo nostrum aut expedita necessitatibus corrupti, molestiae quia ratione aperiam vel veniam!</p></div>
+                        <div class="card__cta">
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#star-plus-outline"></use>
+                            </svg>
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#eye-plus"></use>
+                            </svg>
+                            <svg class="icon grey" >
+                                <use xlink:href="./assets/images/icons/icons.svg#source-fork"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title"><h1>Ad Blocker</h1></div>
+                        <div class="card__details"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorum impedit pariatur dignissimos omnis architecto molestias corporis, itaque quae laudantium corrupti rem at modi illum. Quam, provident? Obcaecati, est repellendus.</p></div>
+                        <div class="card__cta">
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#star-plus-outline"></use>
+                            </svg>
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#eye-plus"></use>
+                            </svg>
+                            <svg class="icon grey" >
+                                <use xlink:href="./assets/images/icons/icons.svg#source-fork"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title"><h1>Money Maker</h1></div>
+                        <div class="card__details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nulla impedit blanditiis ratione commodi velit aut modi eos fugit, incidunt necessitatibus atque ipsa autem consectetur et quas, officia illo nisi.</p></div>
+                        <div class="card__cta">
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#star-plus-outline"></use>
+                            </svg>
+                            <svg class="icon grey">
+                                <use xlink:href="./assets/images/icons/icons.svg#eye-plus"></use>
+                            </svg>
+                            <svg class="icon grey" >
+                                <use xlink:href="./assets/images/icons/icons.svg#source-fork"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <article class="announcements-container">
+                <h1>Announcements</h1>
+                <div class="announcement-card">
+                    <div class="items">
+                        <h2>Site maintenance</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eos minima eligendi maiores voluptatem aliquam adipisci consequuntur ab, nemo molestiae, officiis praesentium ipsum laudantium atque voluptatum fuga, omnis perspiciatis amet.</p>
+                    </div>
+                    <div class="items">
+                        <h2>Community Share Day</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repellat animi provident saepe distinctio, dolorum temporibus? Corrupti fuga quibusdam vel blanditiis veniam debitis iusto culpa provident dignissimos. Laborum, sunt ea.</p>
+                    </div>
+                    <div class="items" id="bottom">
+                        <h2>Updated Privacy Policy</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi id ut laborum quos. Numquam possimus nulla molestias tempora quia quidem nihil quo quaerat, libero maxime ipsum officia distinctio perspiciatis quas?</p>
+                    </div>
+                </div>
+            </article>
+            <article class="trending-container">
+                <h1>Trending</h1>
+                <div class="trending__card">
+                    <div class="trending__card-items">
+                        <div class="trending__card-items__img">
+                            <img src="./assets/images/stock-photos/2189.jpg" alt="">
+                        </div>
+                        <div class="trending__card-details">
+                            <h3>@tegan</h3>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending__card-items">
+                        <div class="trending__card-items__img">
+                            <img src="./assets/images/stock-photos/man.jpg" alt="">
+                        </div>
+                        <div class="trending__card-details">
+                            <h3>@morgan</h3>
+                            <p>Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="trending__card-items">
+                        <div class="trending__card-items__img">
+                            <img src="./assets/images/stock-photos/kendall.jpg" alt="">
+                        </div>
+                        <div class="trending__card-details">
+                            <h3>@kendall</h3>
+                            <p>Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="trending__card-items">
+                        <div class="trending__card-items__img">
+                            <img src="./assets/images/stock-photos/pic2.jpg" alt="">
+                        </div>
+                        <div class="trending__card-details">
+                            <h3>@alex</h3>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside class="dashboard">
+                <div class="slider-container">
+                    <div class="img__track">
+
+                    </div>
+                </div>
+            </aside>
         </main>
     </div>
 </body>
