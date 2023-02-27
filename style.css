@@ -441,6 +441,8 @@ main{
     aspect-ratio: 1/2;
     margin-left: 50%;
     margin-right: 50%;
+    position: relative;
+    left: 25%;
 }
 
 .clicker{
